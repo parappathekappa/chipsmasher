@@ -124,7 +124,7 @@ function writemessage() {
 			thetags['treatment'] = 'remove the ' + thetags['tree'];
 		}
 	} else {
-		thetags['problem'] = thetags['number3'] + ' some work';
+		thetags['problem'] = 'that ' + thetags['number3'] + ' some work';
 		thetags['treatment'] = 'do the work';
 	}
 	
@@ -135,9 +135,6 @@ function writemessage() {
 		thetags['payment'] = 'for about $' + payment;
 	}
 		
-	
-		
-
 	try {
 		first_letter = thetags['species'][0].toLowerCase();
 		if (["a","e","i","o","u"].indexOf(first_letter) != -1 && thetags['number'] == "a") {
