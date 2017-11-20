@@ -1,0 +1,116 @@
+input,
+select,
+button {
+  outline: none;
+  box-shadow: none;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'DragonIsComing';
+  font-style: normal;
+  font-weight: 400;
+  src: url('https://s3-us-west-2.amazonaws.com/lob-assets/Dragon+is+coming.otf') format('opentype');
+}
+
+.body {
+  width: 6.25in;
+  height: 4.25in;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  position: relative;
+  border: .01in solid lightgrey;
+}
+/* do not put text outside of the safe area */
+
+#safe-area {
+  position: absolute;
+  width: 5.875in;
+  height: 3.875in;
+  left: 0.1875in;
+  top: 0.1875in;
+  /*border: .01in dashed orange;*/
+  overflow: hidden;
+
+}
+
+#message {
+  position: absolute;
+  width: 2.2in;
+  height: 2in;
+  top: 0.25in;
+  left: .25in;
+  font-family: 'Lato';
+  font-weight: 400;
+  font-size: .122in;
+}
+
+#thanks {
+  font-family: 'Lato';
+  font-weight: 400;
+  font-size: .122in;
+  text-align: center;
+  background-color: rgb(226, 243, 248);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /*z-index: 1;*/
+}
+
+.logo_sm {
+  height: 0.5in;
+  margin: 0.20in 0 0.23in 0;
+}
+
+.txtblock {
+  margin-bottom: 10px;
+}
+
+.formarea {
+  position: absolute;
+  top: 4.5in;
+}
+
+.question {
+  margin-bottom: 10px;
+}
+
+.select:empty {
+  display: none;
+}
+
+/*Boilerplate styling*/
+.button {
+  border: solid grey 1px;
+  border-radius: 2px;
+  background-color: lightgrey;
+}
+
+.button.pressed {
+  background-color: darkorange;
+  border: solid black 1px;
+}
+
+.button:hover {
+  background-color: orange;
+}
+
+.button:disabled {
+  background-color: lightgrey;
+}
+
+.input {
+  width: 200px;
+}
+
+.qtext {
+  font-family: 'Lato';
+}

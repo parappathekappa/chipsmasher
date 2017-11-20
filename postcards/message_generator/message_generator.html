@@ -1,0 +1,99 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <link href='https://fonts.googleapis.com/css?family=Lato:400' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href='message_generator.css'>
+  <script src='jquery-3.2.1.min.js'></script>
+  <!-- <script src='message_generator.js'></script> -->
+  <title>TreeBidz Back</title>
+  <style>
+    
+  </style>
+</head>
+
+<body>
+  <div class="body">
+    <div id="thanks">
+      <img class="logo_sm" src="https://s3-us-west-2.amazonaws.com/treebidz/treecarela3.png" />
+    </div>
+
+    <!-- do not put text outside of the safe area -->
+    <div id="safe-area">
+      <div id="message">
+        <div id="greeting" class="greeting txtblock">Hi there,</div>
+        <div id="problem" class="problem txtblock"></div>
+        <div id="solution" class="solution txtblock"></div>
+        <div id="closing" class="closing txtblock">Thanks for your time.</div>
+        <div class="signature txtblock">
+          <div id="name" class="name">Nick Araya</div>
+          <div id="company" class="company">TreeCare LA</div>
+          <div id="email" class="email">nick@treecarela.com</div>
+          <div id="phone" class="phone">(323) 327-1611</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="formarea">
+
+    <div id="q1" class="question">
+      <div class="qtext">How many trees are there?</div>
+      <button class="nbutton button">1</button>
+      <button class="nbutton button">2</button>
+      <button class="nbutton button">3+</button>
+    </div>
+
+    <div id="q2" class="question">
+      <div class="qtext">What species of trees?</div>
+      <select class="select" id="species_select"></select>
+      <input class="input" id="species_input" type="text">
+    </div>
+
+    <div id="q3" class="question">
+      <div class="qtext">What's wrong with them?</div>
+      <select class="select" id="whatswrong">
+        <option value=""></option>
+        <option value="dead">Dead</option>
+        <option value="wildhairs">Wild Hairs</option>
+        <option value="hazardlimbs">Hazardous Limbs</option>
+        <option value="diseased">Diseased</option>
+      </select>
+    </div>
+
+    <div id="q4" class="question">
+      <div class="qtext">What kind of disease?</div>
+      <select class="select" id="disease_select"></select>
+      <input class="input" id="disease_input" type="text">
+    </div>
+
+    <div id="q5" class="question">
+      <div class="qtext">Treat or remove?</div>
+      <button class="rbutton button">Treat</button>
+      <button class="rbutton button">Remove</button>
+    </div>
+
+    <div id="q6" class="question">
+      <div class="qtext">Include a price?</div>
+      <input class="input" id="price" type="number" value="" placeholder="$">
+    </div>
+
+  </div>
+</body>
+
+<script type="text/javascript">
+  function downloadJSAtOnload() {
+    // Append the chipdrop.min.js file
+    var e1 = document.createElement("script");
+    e1.setAttribute('type', 'text/javascript');
+    e1.src = 'message_generator.js';
+    document.body.appendChild(e1);
+  }
+  if (window.addEventListener)
+    window.addEventListener("load", downloadJSAtOnload, false);
+  else if (window.attachEvent)
+    window.attachEvent("onload", downloadJSAtOnload);
+  else window.onload = downloadJSAtOnload;
+</script>
+
+</html>

@@ -1,0 +1,95 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <link href='https://fonts.googleapis.com/css?family=Lato:400' rel='stylesheet' type='text/css'>
+  <title>TreeBidz Back</title>
+  <style>
+    *,
+    *:before,
+    *:after {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+    
+    @font-face {
+      font-family: 'DragonIsComing';
+      font-style: normal;
+      font-weight: 400;
+      src: url('https://s3-us-west-2.amazonaws.com/lob-assets/Dragon+is+coming.otf') format('opentype');
+    }
+    
+    body {
+      width: 6.25in;
+      height: 4.25in;
+      margin: 0;
+      padding: 0;
+      background-color: white;
+      position: relative;
+      /*border: .01in solid lightgrey;*/
+    }
+    /* do not put text outside of the safe area */
+    
+    #safe-area {
+      position: absolute;
+      width: 5.875in;
+      height: 3.875in;
+      left: 0.1875in;
+      top: 0.1875in;
+      border: .01in dashed orange;
+      overflow: hidden;
+
+    }
+    
+    #message {
+      position: absolute;
+      width: 2.2in;
+      height: 2in;
+      top: 0.25in;
+      left: .25in;
+      font-family: 'Lato';
+      font-weight: 400;
+      font-size: .122in;
+    }
+    
+    #thanks {
+      font-family: 'Lato';
+      font-weight: 400;
+      font-size: .122in;
+      text-align: center;
+      background-color: rgb(226, 243, 248);
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      /*z-index: 1;*/
+    }
+
+    .logo_sm {
+      height: 0.5in;
+      margin: 0.20in 0 0.23in 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="thanks">
+    <img class="logo_sm" src="https://s3-us-west-2.amazonaws.com/treebidz/treecarela3.png" />
+  </div>
+
+  <!-- do not put text outside of the safe area -->
+  <div id="safe-area">
+    <div id="message">
+      Hi there,
+      <br><br>We were working by your house on Monday and noticed you have a couple Oak trees in your yard that have Oak Wilt disease and should probably be removed to avoid spreading to other trees.
+      <br><br>We could remove the trees the next time we're in the area if you're interested.  Just give us a call or send us an email.
+      <br><br> Thanks for your time.
+      <br><br>Nick Araya
+      <br>Tree Care LA
+      <br>nick@treecarela.com
+      <br>(323) 327-1611
+    </div>
+  </div>
+</body>
+
+</html>
